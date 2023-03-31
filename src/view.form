@@ -16,7 +16,12 @@
         </constraints>
         <properties/>
         <border type="none"/>
-        <children/>
+        <children>
+          <component id="ac6a3" class="javax.swing.JTextArea" binding="conntent">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
       </scrollpane>
       <component id="86bb6" class="javax.swing.JButton" binding="login">
         <constraints>

@@ -1,10 +1,10 @@
 import javax.swing.*;
-
+import java.sql.*;
 public class Controller extends JFrame {
      view view;
-     modell modell;
-    public Controller(modell m, view v) {
-        this.modell = m;
+     model model;
+    public Controller(model m, view v) {
+        this.model = m;
         this.view = v;
 
         this.setContentPane(view.getPanel());
@@ -12,10 +12,15 @@ public class Controller extends JFrame {
         this.pack();
         this.setVisible(true);
 
+        m.MakeConnection();
+        m.GetPosts();
+
+
+
     }
 
     public static void main(String[] args) {
-        modell m = new modell();
+        model m = new model();
         view v = new view();
         Controller thisIsTheProgram = new Controller(m,v);
         thisIsTheProgram.setVisible(true);
