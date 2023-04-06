@@ -35,10 +35,10 @@ public class model {
 
             while (result.next()) {
                 String output = "";
-                output += result.getInt("id") + ", " +
-                        result.getString("title") + ", " +
+                output += result.getString("name") + ": " +
+                        result.getString("title") + "\n " +
                         result.getString("content") + ", " +
-                        result.getString("name");
+                        result.getString("id") + "\n";
                 posts.add(output);
             }
 

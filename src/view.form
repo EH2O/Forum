@@ -19,7 +19,12 @@
         <children>
           <component id="ac6a3" class="javax.swing.JTextArea" binding="conntent">
             <constraints/>
-            <properties/>
+            <properties>
+              <editable value="false"/>
+              <font name="Monospaced" size="22" style="2"/>
+              <lineWrap value="true"/>
+              <wrapStyleWord value="true"/>
+            </properties>
           </component>
         </children>
       </scrollpane>

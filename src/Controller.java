@@ -13,8 +13,8 @@ public class Controller extends JFrame {
         this.setVisible(true);
 
         m.MakeConnection();
-        m.GetPosts();
 
+        v.setText( m.GetPosts());
 
 
     }
